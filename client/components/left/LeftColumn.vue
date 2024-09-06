@@ -1,16 +1,25 @@
 <template>
   <div class="left-column" data-placement="show">
     <LeftColumnHeader />
+  
+    <ChatList/>
   </div>
 </template>
 
-<style>
+<script lang="ts" setup>
+  import ChatList from "./screens/chat/ChatList.vue";
+  import LeftColumnHeader from "./LeftColumnHeader.vue";
+
+</script>
+
+<style scoped>
   .left-column {
     position: relative;
     overflow: hidden;
     height: 100%;
     width: 100%;
     transition: transform 250ms ease-out;
+    padding: .25rem;
   }
 
   @media (max-width: 640px) {

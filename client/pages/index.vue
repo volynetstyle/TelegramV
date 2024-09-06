@@ -6,8 +6,15 @@
   </div>
 </template>
 
+<script lang="ts" setup>
+  import LeftColumn from "../components/left/LeftColumn.vue";
+  import MiddleColumn from "../components/middle/MiddleColumn.vue";
+  import RightColumn from "../components/right/RightColumn.vue";
+</script>
+
 <style scoped>
   .main-container {
+    
     display: grid;
     grid-template-columns: minmax(250px, min(45%, 400px)) 1fr;
     grid-template-rows: 1fr;

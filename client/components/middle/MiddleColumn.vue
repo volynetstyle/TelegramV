@@ -1,5 +1,9 @@
+<script lang="ts" setup>
+  import MiddleColumnHeader from './MiddleColumnHeader.vue';
+</script>
+
 <template>
   <div class="middle-column">
-    afksaf
+    <MiddleColumnHeader/>
   </div>
 </template>
