@@ -1,0 +1,9 @@
+<template>
+  <UInput
+    icon="i-heroicons-magnifying-glass-20-solid"
+    size="xl"
+    color="white"
+    :trailing="false"
+    placeholder="Search..."
+  />
+</template>
