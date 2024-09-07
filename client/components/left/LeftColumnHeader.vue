@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useUIStore } from "~/src/stores/UIStore";
+import { useUIStore } from "~/stores/UIStore";
 
 const uiStore = useUIStore();
 

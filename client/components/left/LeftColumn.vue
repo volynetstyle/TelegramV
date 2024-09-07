@@ -11,35 +11,33 @@
 <script lang="ts" setup>
 import ChatList from "./screens/chat/ChatList.vue";
 import LeftColumnHeader from "./LeftColumnHeader.vue";
-import { useUIStore } from "~/src/stores/UIStore";
+import { useUIStore } from "~/stores/UIStore";
 
 const uiStore = useUIStore();
-
 </script>
 
 <style scoped>
 .left-column {
   position: relative;
   overflow: hidden;
-  height: 100%;
+  height: 100dvh;
   width: 100%;
   padding: 0.25rem;
-  background-color: white;
   z-index: 3;
+  background-color: inherit;
 }
 
 @media (max-width: 640px) {
   .left-column {
     position: fixed;
+    z-index: 3;
     top: 0;
     left: 0;
     height: 100dvh;
     width: 100dvw;
     border-right: none;
-    background-color: white;
-    transition: transform 250ms ease-out;
+    transition: transform var(--transition-standard-in);
   }
-
 
   .left-column[data-placement="hide"] {
     transform: translateX(-100%);

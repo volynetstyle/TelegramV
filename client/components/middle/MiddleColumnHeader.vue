@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useUIStore } from "~/src/stores/UIStore"; 
+import { useUIStore } from "~/stores/UIStore"; 
 import MiddleHeaderMenu from "./MiddleHeaderMenu.vue";
 
 const {toggleRightColumn, toggleLeftColumn} = useUIStore();

@@ -14,11 +14,14 @@
   },
   "dependencies": {
     "@nuxt/ui": "^2.18.4",
-    "@nuxtjs/color-mode": "^3.4.4",
     "@pinia/nuxt": "^0.5.4",
     "nuxt": "^3.13.0",
     "pinia": "^2.2.2",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "sass-embedded": "^1.78.0"
   }
 }
